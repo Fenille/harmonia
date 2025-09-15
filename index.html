@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARMONIA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000; /* Fundo preto */
-            margin: 0;
-            padding: 0;
-            color: yellow; /* Texto amarelo */
-        }
-        header {
-            background-color: #111; /* Preto levemente diferente */
-            color: yellow;
-            padding: 15px 0;
-            text-align: center;
-            border-bottom: 2px solid yellow;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        .playlist-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        .playlist-card {
-            background-color: #111; /* Fundo do card preto */
-            margin: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3); /* sombra amarelada */
-            width: 300px;
-            text-align: center;
-            border: 1px solid yellow;
-        }
-        .playlist-card h3 {
-            margin: 15px 0;
-            color: yellow;
-        }
-        .playlist-card a {
-            display: block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: yellow;
-            font-weight: bold;
-        }
-        .playlist-card a:hover {
-            text-decoration: underline;
-        }
-        iframe {
-            border-radius: 8px;
-            border: 2px solid yellow;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARMONIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      color: yellow;
+    }
+    header {
+      background-color: #111;
+      color: yellow;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 2px solid yellow;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .playlist-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .playlist-card {
+      background-color: #111;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 0, 0.4);
+      flex: 1 1 350px;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid yellow;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .playlist-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(255, 255, 0, 0.6);
+    }
+    iframe {
+      border-radius: 10px;
+      border: 2px solid yellow;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+    }
+    .drive-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 18px;
+      background-color: yellow;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .drive-link:hover {
+      background-color: #ffd700;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>MESTRE DE HARMONIA</h1>
-    </header>
+  <header>
+    <h1>MESTRE DE HARMONIA</h1>
+  </header>
 
-    <div class="playlist-container">
-        <!-- ENTRADA -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/4Ss5fxkp9eoUgaSp7eW2uO?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        
-        <!-- LIVRO DA LEI -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/78R1l6hsyXyDazYoXBodTz?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        
-        <!-- BOLSA DE PROPOSTAS E INFORMAÇÕES -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/4b6qTrzZLstkrydYGLqAgn?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        
-        <!-- TRONCO DE SOLIDARIEDADE -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/1vPadZ8AH20oGwhlgqdaeh?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        
-        <!-- SAÍDA -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/7uTxW3nkhL1emoetx0cy1T?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        
-        <!-- MÚSICAS DE ESPERA -->
-        <div class="playlist-card">
-            <iframe src="https://open.spotify.com/embed/playlist/5OS6wt2RwO8qpzX3EErqt3?utm_source=generator" width="100%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-       
+  <div class="playlist-container">
+    <!-- ENTRADA -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/4Ss5fxkp9eoUgaSp7eW2uO?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- LIVRO DA LEI -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/78R1l6hsyXyDazYoXBodTz?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- BOLSA DE PROPOSTAS -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/4b6qTrzZLstkrydYGLqAgn?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- TRONCO DE SOLIDARIEDADE -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/1vPadZ8AH20oGwhlgqdaeh?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- SAÍDA -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/7uTxW3nkhL1emoetx0cy1T?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- MÚSICAS DE ESPERA -->
+    <div class="playlist-card">
+      <iframe src="https://open.spotify.com/embed/playlist/5OS6wt2RwO8qpzX3EErqt3?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
     <!-- DRIVE -->
 <div class="playlist-card" style="position: relative; overflow: hidden; padding: 0;">
   <img src="esquadro_compasso_azul_800fdr55.jpg" 
@@ -120,11 +130,8 @@
      ">
     Seções Magnas
   </a>
-
-        </div>
-    </div>
+</div>
+ </div>
 
 </body>
 </html>
-
-
